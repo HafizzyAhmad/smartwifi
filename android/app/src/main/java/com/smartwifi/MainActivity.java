@@ -3,6 +3,7 @@ package com.smartwifi;
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactRootView;
+import com.proyecto26.inappbrowser.RNInAppBrowserModule;
 
 public class MainActivity extends ReactActivity {
 
@@ -23,6 +24,12 @@ public class MainActivity extends ReactActivity {
   @Override
   protected ReactActivityDelegate createReactActivityDelegate() {
     return new MainActivityDelegate(this, getMainComponentName());
+  }
+
+  @Override
+  protected void onStart() {
+    super.onStart();
+    RNInAppBrowserModule.onStart(this);
   }
 
   public static class MainActivityDelegate extends ReactActivityDelegate {
