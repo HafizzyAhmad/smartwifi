@@ -49,6 +49,7 @@ export default StyleSheet.create({
   yellowStatus: { ...captionBold, ...color.fontYellow },
 
   greenHeadline: { ...largeTitle, ...color.fontGreen },
+  greenStatus: { ...captionBold, ...color.fontGreen },
 
   lineHeightXXL: { lineHeight: 36 },
   lineHeightXL: { lineHeight: 27 },
