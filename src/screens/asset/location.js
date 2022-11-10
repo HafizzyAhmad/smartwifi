@@ -12,7 +12,7 @@ const LocationAssets = ({ navigation }) => {
       <View>
         <Image
           source={require(img)}
-          resizeMode='center'
+          resizeMode='contain'
           style={{ width: '100%', height: '100%' }}
         />
         {/* <Text>Map Will Show Here</Text> */}

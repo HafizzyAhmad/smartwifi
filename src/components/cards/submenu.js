@@ -10,18 +10,32 @@ import InAppBrowser from '../../utils/inappbrowser';
 // import common from '../../styles/common';
 
 const SubMenuCard = ({ nav }) => {
+  const IMAGE_HEALTH = require('../../assets/images/subbanner-health.png');
+  const IMAGE_SECURITY = require('../../assets/images/subbanner-security.png');
   const IMAGE_ASSETS = require('../../assets/images/subbanner-assets.png');
   const IMAGE_BIZ = require('../../assets/images/subbanner-ads.png');
 
   const submenu = [
     {
       id: 1,
+      name: 'Family & Health',
+      image: IMAGE_HEALTH,
+      navigate: () => nav.navigate('Family')
+    },
+    {
+      id: 2,
+      name: 'Safety & Security',
+      image: IMAGE_SECURITY,
+      navigate: () => nav.navigate('Security')
+    },
+    {
+      id: 3,
       name: 'Assets Tracking',
       image: IMAGE_ASSETS,
       navigate: () => nav.navigate('Assets')
     },
     {
-      id: 2,
+      id: 4,
       name: 'Biz Applications',
       image: IMAGE_BIZ,
       navigate: () =>

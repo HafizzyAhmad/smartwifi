@@ -17,7 +17,7 @@ const Home = ({ navigation }) => {
     <Layout custom={common.basicLayout}>
       <LogoHeader />
       <View style={[common.basicContainer]}>
-        <MainMenuCard props={mainmenu} nav={navigation} />
+        {/* <MainMenuCard props={mainmenu} nav={navigation} /> */}
         <SubMenuCard nav={navigation} />
       </View>
     </Layout>
